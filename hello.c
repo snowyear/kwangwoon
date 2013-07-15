@@ -4,13 +4,13 @@
 
 int __init init_hello(void)
 {
-	printk(KERN_ALERT"[Module Message] Hello, Modue.\n");
+	printk(KERN_ALERT"[misc driver Message] Hello.\n");
 	return 0;
 }
 
 void __exit exit_hello(void)
 {
-	printk( KERN_ALERT "[Module Message] Do you really want to break up with me? \n");
+	printk( KERN_ALERT "[misc driver Message] Do you really want to break up with me? \n");
 }
 module_init(init_hello);
 module_exit(exit_hello);
