@@ -1,0 +1,1 @@
+cmd_/root/Module/hello.ko := ld -r -m elf_x86_64 -T /usr/src/linux-headers-2.6.32-38-generic/scripts/module-common.lds --build-id -o /root/Module/hello.ko /root/Module/hello.o /root/Module/hello.mod.o
